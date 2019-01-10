@@ -392,13 +392,49 @@ tragedies = ['A family member or a close friend died.',  # Randomized addition
             'though they might eventually forgive you.',
             'A romantic relationship ended.',  # Randomized addition
             'A current or prospective romantic partner of yours died.']  # Randomized addition
-war = []
-weird_stuff = []
-
-aligment = []
-cause_of_death = []
-klass = []
-occupation = []
-race = []
-relationship = []
-status = []
+war = ['You were knocked out and left for dead. You woke up hours later with no recollection of the battle.',
+      'You were badly injured in the fight, and you still bear the awful scars of those wounds.',
+      'You ran away from the battle to save your life, but you still feel shame for your cowardice.',
+      'You suffered only minor injuries, an the wounds all healed without leaving scars.',
+      'You survived the battle, but you suffer from terrible nightmares in which you relive the experience.',
+      'You escaped the battle unscathed, though many of your friends were injured or lost.',
+      'You acquitted yourself well in battle and are as a hero. You might have received a medal for your bravery.']
+weird_stuff = ['You were turned into a toad and remained in that form for ' + 
+               str(np.random.randint(low=1, high=4, size=1)[0]) + ' weeks.',
+              'You were petrified and remained a stone statue for a time until someone freed you.',
+              'You were enslaved by a hag, a satyr, or some other being and lived in that creature\'s thrall for ' +
+              str(np.random.randint(low=1, high=6, size=1)[0]) + ' years.',
+              'A dragon held you as a prisoner for ' + str(np.random.randint(low=1, high=4, size=1)[0]) + ' months '
+              'until adventurers killed it.',
+              'You were taken captive by a race of evil humanoids such as drow, kuo-toa, or quaggoths. You lived '
+              'as a slave in the Underdark until you escaped.',
+              'You served a powerful adventurer as a hireling. You have only recently left that service. '
+              'Use the supplemental tables and work with your DM to determine the basic details '
+              'about your former employer.', 
+              'You went insane for ' + str(np.random.randint(low=1, high=6, size=1)[0]) + ' years and recently'
+              ' regained your sanity. A tic or some other bit of odd behavior might linger.',
+              'A lover of yours was secretly a silver dragon.',
+              'You were captured by a cult and nearly sacrificed on an altar to the foul being the cultists served.'
+              ' You escaped, but you fear they will find you.',
+              'You met a demigod, an archdevil, an archfey, a demon lord, or a titan, and you lived to tell the tale.',
+              'You were swallowed by a giant fish and spent a month in its gullet before you escaped.',
+              'A powerful being granted you a wish, but you squandered it on something frivolous.']
+aligment = ['Chaotic Evil', 'Chaotic Neutral', 'Lawful Evil', 'Neutral Evil', 'Neutral', 'Neutral Good', 
+           'Lawful Good', 'Lawful Neutral', 'Chaotic Good', 'Chaotic Neutral']
+cause_of_death = ['Unknown', 'Murdered', 'Killed in Battle', 'Accident related to class or occupation', 
+                 'Accident unrelated to class or occupation', 'Natural causes, such as disease or old age',
+                 'Apparent suicide', 'Torn apart by an animal or a natural disaster',
+                 'Consumed by a monster', 'Executed for a crime or tortured to death',
+                 'Bizarre event, such as being hit by a meteorite, struck down by an angry god, '
+                  'or killed by a hatchling slaad egg']
+klass = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 
+        'Warlock', 'Wizard']
+occupation = ['Academic', 'Adventurer',  # Randomized addition/replacement
+             'Aristocrat', 'Artisan or guild member', 'Criminal', 'Entertainer', 'Exile, hermit, or refugee',
+             'Explorer or wanderer', 'Farmer or herder', 'Hunter or trapper', 'Laborer', 'Merchant',
+             'Politician or bureaucrat', 'Priest', 'Sailor', 'Soldier']
+race = ['Human', 'Dwarf', 'Elf', 'Halfling', 'Dragonborn', 'Gnome', 'Half-elf', 'Half-orc', 'Tiefling', 'DM\'s choice']
+relationship = ['Hostile', 'Friendly', 'Indifferent']
+status = ['Dead',  # Randomized addition
+         'Mising or unknown', 'Alive, but doing poorly due to injury, financial trouble, or relationship difficulties',
+         'Alive and well', 'Alive and quite successful', 'Alive and infamous', 'Alive and famous']
