@@ -306,3 +306,19 @@ life_events = ['You suffered a tragedy.', 'You gained a bit of good fortune.',
                'You encountered something magical.',
                'Something truly strange happened to you.']
 adventures = []  # TODO CONTINUAR DAQUI
+arcane_matters = []
+boons = []
+crime = []
+punishment = []
+supernatural_event = []
+tragedies = []
+war = []
+weird_stuff = []
+
+aligment = []
+cause_of_death = []
+klass = []
+occupation = []
+race = []
+relationship = []
+status = []
