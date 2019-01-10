@@ -382,7 +382,16 @@ tragedies = ['A family member or a close friend died.',  # Randomized addition
             str(np.random.randint(low=1, high=6, size=1)[0] + ' years at hard labor, in jail, or shackled '
             'to an oar in a slave galley.',
             'War ravaged your home community, reducing everything to rubble and ruin. In the aftermath, '
-            'you either helped your town rebuild or moved somewhere else.']
+            'you either helped your town rebuild or moved somewhere else.',
+            'A lover disappeared without a trace. You have been lookiung for that person ever since.',
+            'A terrible blight in your home community caused crops to fail, and many starved. You lost a sibling'
+            ' or some other family member.',
+            'You did something that brought terrible shame to you in the eyes of your family. '
+            'You might have been involved in a scandal, dabbled in dark magic, or offended someone important. '
+            'The attitude of your family members toward you becomes indifferent at best, '
+            'though they might eventually forgive you.',
+            'A romantic relationship ended.',  # Randomized addition
+            'A current or prospective romantic partner of yours died.']  # Randomized addition
 war = []
 weird_stuff = []
 
