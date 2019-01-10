@@ -11,4 +11,5 @@ It takes as input:
 And delivers as output a .txt file with a whole randomly generated character story based on the inputs in the same directory as the script (or executable) is located.
 
 Linux executable: <link>
+
 Windows executable: <link>
