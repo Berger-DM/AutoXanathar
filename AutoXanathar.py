@@ -305,8 +305,28 @@ life_events = ['You suffered a tragedy.', 'You gained a bit of good fortune.',
                'You committed a crime or were wrongly accused of doing so.',
                'You encountered something magical.',
                'Something truly strange happened to you.']
-adventures = []  # TODO CONTINUAR DAQUI
-arcane_matters = []
+adventures = ['You nearly died. You have nasty scars on your body, and you are missing an ear, ' + 
+             str(np.random.randint(low=1, high=3, size=1)[0]) + ' fingers, or' + 
+             str(np.random.randint(low=1, high=4, size=1)[0] + ' toes.',
+             'You suffered a grievous injury. Although the wound healed, it still pains you from time to time.',
+             'You were wounded, but in time you fully recovered.',
+             'You contracted a disease while exploring a filthy warren. You recovered from the disease, '
+             'but you have a persistent cough, pockmarks on your skuin, or prematurely gray hair.',
+             'You were poisoned by a trap or monster. You recovered, but the next time yo must make '
+             'a saving throw against poison, you make the saving throw with disadvantage.',
+             'You lost something of sentimental value to you during your adventure. Remove one trinket '
+             'from your possessions.',
+             'You were terribly frightened by something you encountered and ran away, abandoning your '
+             'companions to their fate.',
+             'You learned a great deal during your adventure. The next time you make an ability check or '
+             'a saving throw, you have advantage on the roll.',
+             'You found some treasure on your adventure. You have ' + 
+             str(np.random.randint(low=2, high=12, size=1)[0]) + ' gp from your share of it.',
+             'You found a considerable amount of treasure on your adventure. You have ' + 
+             str(np.random.randint(low=1, high=20, size=1)[0] + 50) + ' gp left from your share of it.',
+             'You came across a common magic item (of the DM\'s choice).']
+arcane_matters = ['You were charmed or frightened by a spell.',
+                 'You were injured by the effect of a spell.']
 boons = []
 crime = []
 punishment = []
