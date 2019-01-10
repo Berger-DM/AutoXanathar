@@ -31,7 +31,7 @@ family = ['None', 'Institution, such as an asylum', 'Temple', 'Orphanage', 'Guar
           'Paternal or maternal aunt, uncle, or both; or extended family such as a tribe or clan',
           'Paternal or maternal grandparent(s)', 'Adoptive family (same or different race',
           'Single father or stepfather', 'Single mother or stepmother', 'Mother and Father']
-absent_parent = ['Your parent died', 'Your parent was imprisoned, enslaved, or otherwise taken away.',
+absent_parent = ['Your parent died', 'Your parent was imprisoned, enslaved, or otherwise taken away.',  # Parent died: Randomized addition
                  'Your parent abandoned you.', 'Your parent disappeared to an unknown fate.']
 family_lifestyle = {'Wretched': -40, 'Squalid': -20, 'Poor': -10, 'Modest': 0, 'Comfortable': 10, 'Wealthy': 20,
                     'Aristocratic': 40}
@@ -304,7 +304,7 @@ life_events = ['You suffered a tragedy.', 'You gained a bit of good fortune.',
                'You fought in a battle.',
                'You committed a crime or were wrongly accused of doing so.',
                'You encountered something magical.',
-               'Something truly strange happened to you.']
+               'Something truly strange happened to you.']  # Most have randomized additions
 adventures = ['You nearly died. You have nasty scars on your body, and you are missing an ear, ' + 
              str(np.random.randint(low=1, high=3, size=1)[0]) + ' fingers, or' + 
              str(np.random.randint(low=1, high=4, size=1)[0] + ' toes.',
@@ -326,8 +326,31 @@ adventures = ['You nearly died. You have nasty scars on your body, and you are m
              str(np.random.randint(low=1, high=20, size=1)[0] + 50) + ' gp left from your share of it.',
              'You came across a common magic item (of the DM\'s choice).']
 arcane_matters = ['You were charmed or frightened by a spell.',
-                 'You were injured by the effect of a spell.']
-boons = []
+                 'You were injured by the effect of a spell.',
+                 'You witnessed a powerful spell being cast by ',  # Randomized addition
+                 'You drank a potion (of the DM\'s choice.',
+                 'You found a spell scroll (of the DM\'s choice) and succeeded in casting the spell it contained.,
+                 'You were affected by teleportation magic.', 
+                 'You turned invisible for a time.',
+                 'You identified an illusion for what it was.',
+                 'You saw a creature being conjured by magic.',
+                 'Your fortune was read by a diviner. ']  # Randomized addition
+boons = ['A friendly wizard gave you a spell scroll containing a cantrip (of the DM\'s choice).',
+        'You saved a commoner, who now owes you a life debt. The individual accompanies you on your travels'
+        ' and performs mundane tasks for you, but will leave if neglected, abused, or imperiled. Determine '
+        'details about this character working with the DM.',  # Randomized addition
+        'You found a riding horse.',
+        'You found some money. You have ' + str(np.random.randint(low=1, high=20. size=1)[0]) + ' gp in addition'
+        ' to yor regular starting funds.',
+        'A relative bequeathed you a simple weapon of your choice.',
+        'You found something interesting. You gain one additional trinket.',
+        'You once performed a service for a local temple. The next time you visit the temple, you can receive'
+        ' healing up to your hit point maximum.',
+        'A friendly alchemist gifted you with a potion of healing or a flask of acid, as you choose.',
+        'You found a treasure map.',
+        'A distant relative left you a stipend that enables you to live at the comfortable lifestyle for ' + 
+        str(np.random.randint(low=1, high=20, size=1)[0]) + ' years. If you choose to live at a higher lifestyle,'
+        ' you reduce the price of the lifestyle by 2 gp during that time period.']
 crime = []
 punishment = []
 supernatural_event = []
