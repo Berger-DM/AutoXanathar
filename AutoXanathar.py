@@ -351,10 +351,38 @@ boons = ['A friendly wizard gave you a spell scroll containing a cantrip (of the
         'A distant relative left you a stipend that enables you to live at the comfortable lifestyle for ' + 
         str(np.random.randint(low=1, high=20, size=1)[0]) + ' years. If you choose to live at a higher lifestyle,'
         ' you reduce the price of the lifestyle by 2 gp during that time period.']
-crime = []
-punishment = []
-supernatural_event = []
-tragedies = []
+crime = ['Murder', 'Theft', 'Burglary', 'Assault', 'Smuggling', 'Kidnapping', 'Extortion', 'Counterfeiting']
+punishment = ['You did not commit the crime and were exonerated after being accused.', 
+             'You committed the crime or helped to do so, but nonetheless the authorities found you not guilty.',
+             'You were nearly caught in the act. You had to flee and are wanted on the community where the crime'
+             'occurred.',
+             'You were caught and convicted.']  # Randomized addition
+supernatural_event = ['You were ensorcelled by a fey and enslaved for ' + 
+                      str(np.random.randint(low=1, high=6, size=1)[0]) + ' years before you escaped.',
+                     'You saw a demon and ran away before it could do anything to you.',
+                     'A devil tempted you.',  #Randomized addition
+                     'You woke up one morning miles from your home, with no idea how you got there.',
+                     'You visited a holy site and felt the presence of the divine there.',
+                     'You witnessed a falling red star, a face appearing in the frost, or some other bizarre'
+                     ' happening. You are certain it was an omen of some sort.',
+                     'You escaped certain death and believe it was the intervention of a god that saved you.',
+                     'You witnessed a minor miracle.',
+                     'You explored an empty house and found it to be haunted.',
+                     'You were briefly possessed.',  # Randomized addition
+                     'You saw a ghost.',
+                     'You saw a ghoul feeding on a corpse.',
+                     'A celestial or fiend visited you in your dreams to give a warning of dangers to come.',
+                     'You briefly visited the Feywild or the Shadowfell.',
+                     'You saw a portal that you believe leads to another plane of existence.']
+tragedies = ['A family member or a close friend died.',  # Randomized addition
+            'A friendship ended bitterly, and the other person is now hostile to you. The cause might have '
+            'been a misunderstanding or something you or the former friend did.',
+            'You lost all possessions in a disaster, and you had to rebuild your life.',
+            'You were imprisoned for a crime you didn\'t commit and spent ' + 
+            str(np.random.randint(low=1, high=6, size=1)[0] + ' years at hard labor, in jail, or shackled '
+            'to an oar in a slave galley.',
+            'War ravaged your home community, reducing everything to rubble and ruin. In the aftermath, '
+            'you either helped your town rebuild or moved somewhere else.']
 war = []
 weird_stuff = []
 
