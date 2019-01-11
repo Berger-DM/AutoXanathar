@@ -1,8 +1,6 @@
-import numpy as np
-import PyInstaller
 import PySimpleGUI as sg
-from Functions import *
 from AllTheTables import *
+import os
 
 race_options = list(nonhuman_parents.keys())
 race_options.append('Other Race')
@@ -153,7 +151,9 @@ for i in range(1, no_life_events + 1):
 final_story.append(events)
 print(final_story)
 
-with open('backstory.txt', 'w+') as file:
+desktop = os.path.expanduser('~/Desktop')
+
+with open(desktop + 'backstory.txt', 'w+') as file:
     for row in final_story:
         for row2 in row:
             file.write(row2 + '\n')

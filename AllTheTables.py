@@ -153,8 +153,8 @@ race = {frozenset(range(1, 41)): 'Human',
 relationship = {frozenset(range(3, 5)): 'Hostile',
                 frozenset(range(5, 11)): 'Friendly',
                 frozenset(range(11, 13)): 'Indifferent'}
-status = {frozenset([3]): 'Dead',  # Randomized addition TODO
-          frozenset(range(4, 6)): 'Mising or unknown',
+status = {frozenset([3]): 'Dead',
+          frozenset(range(4, 6)): 'Missing or unknown',
           frozenset(
               range(6, 9)): 'Alive, but doing poorly due to injury, financial trouble, or relationship difficulties',
           frozenset(range(9, 13)): 'Alive and well',
