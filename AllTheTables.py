@@ -634,8 +634,8 @@ life_events = {frozenset(range(1, 21)): ('You suffered a tragedy: ', tragedies_t
                frozenset(range(31, 41)): 'You made an enemy of an adventurer. ' + enemy_adventurer() +
                                          'Use the supplemental tables and work with your DM to determine this hostile '
                                          'character\'s identity and the danger this enemy poses to you.',
-               frozenset(range(41, 51)): 'You made a friend oan adventurer. Use the supplemental tables and work with '
-                                         'your DM to add more detail to this friendly character and establish '
+               frozenset(range(41, 51)): 'You made a friend of an adventurer. Use the supplemental tables and work with'
+                                         ' your DM to add more detail to this friendly character and establish '
                                          'how your friendship began.',
                frozenset(range(51, 71)): 'You spent time working in a job related to your background. '
                                          'Start the game with an extra ' + roll_2d6() + ' gp.',
